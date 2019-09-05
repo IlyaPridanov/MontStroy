@@ -1,0 +1,94 @@
+.main-screen {
+  background-image: url("../img/fon.webp");
+  background-size: cover;
+}
+
+.main-screen__caption {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Raleway", "Arial", monospace;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main-screen__text {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", monospace;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.58;
+  color: #FFFFFF;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.main-screen__year {
+  color: #00ffd8;
+}
+
+.main-screen__link-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-screen__link-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 56px;
+
+  font-family: "Raleway", "Arial", monospace;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: 1px solid #00ffd7;
+
+  &--services {
+    color: #000000;
+
+    background-color: #00ffd7;
+    border: none;
+  }
+}
+
+.main-screen__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.main-screen__link {
+  display: block;
+
+  font-family: "Roboto", "Arial", monospace;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main-screen__link svg {
+  display: block;
+  width: 100px;
+  height: 100px;
+  fill: #FFFFFF;
+}
