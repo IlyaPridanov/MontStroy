@@ -6,15 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MontStroy</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/modernizr-custom.js"></script>
+  <script src="https://unpkg.com/imask"></script>
 </head>
 <body>
   <div style="display: none;">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
   <header class="header">
-      <svg class="logo-img" width="52" height="52">
-          <use xlink:href="#icon-logo"></use>
-        </svg>
+    <div class="container">
+      <div class="header__row">
+        <a href="index.html" class="header__logo logo">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <source srcset="img/logo.png" type="image/png">
+            <img class="logo__img" src="img/logo.png" alt="logo" width="141" height="60">
+          </picture>
+        </a>
+        <nav class="header__nav nav">
+          <button class="nav__btn" type="button">
+            <svg width="18" height="14">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="nav__list nav__list--nav-page nav__hidden">
+            <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Партнеры</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+          <ul class="nav__list connection">
+            <li class="connection__item"><a href="#" class="connection__link connection__link--tel">+7 (495) 452-67-23</a></li>
+            <li class="connection__item connection__item--btn"><a href="#" class="connection__link connection__link--btn">Обратная связь</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
+  <script src="js/script.js"></script>
 </body>
 </html>
