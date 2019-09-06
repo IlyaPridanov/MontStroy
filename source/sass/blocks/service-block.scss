@@ -1,0 +1,34 @@
+.service-block {
+  width: 30%;
+}
+
+.service-block__caption {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.63;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.service-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-block__link {
+  font-family: "Roboto", "Arial", monospace;
+  font-weight: 400;
+  text-decoration: none;
+  color: #303030;
+
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
