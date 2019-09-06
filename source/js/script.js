@@ -4,11 +4,23 @@ window.onload = function () {
 
   var menu = document.querySelector('.nav__list--nav-page');
   var menuOpenBtn = document.querySelector('.nav__btn');
+  var btnSlider = document.querySelectorAll('.btn');
+  /*var upSliderLink = document.querySelectorAll('.up-slider__link');*/
 
   menuOpenBtn.addEventListener('click', function (e) {
     e.preventDefault();
     menu.classList.toggle('nav__hidden');
   });
+
+  for (var i = 0; i < btnSlider.length; i++) {
+    btnSlider[i].addEventListener('click', function (e) {
+      e.preventDefault();
+      for (var j = 0; j < btnSlider.length; j++) {
+        btnSlider[j].classList.remove('btn--active');
+      }
+      this.classList.add('btn--active');
+    });
+  }
   /*var body = document.querySelector('body');
   var openPopap = document.querySelector('.header__call-link');
   var closePopap = document.querySelector('.popap__close');

@@ -46,16 +46,19 @@
   </header>
   <main class="main">
     <section class="main__main-screen main-screen">
-      <div class="container">
-          <div class="main-screen__up">
+      <div class="container container--main-up-desktop">
+        <div class="main-screen__up">
+          <div class="container--main-up-tablet">
             <h1 class="main-screen__caption">строительно-монтажные работы</h1>
             <p class="main-screen__text">
               Компания ЗАО «НCП «МонтCтрой» успешно работает на российском
-              рынке с <span class="main-screen__year">1992</span> года,
-              и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных
-              и пуско-наладочных работ по электроснабжению зданий и сооружений.
+              рынке с&nbsp;<span class="main-screen__year">1992</span> года,
+              и за это время зарекомендовала себя как ведущий разработчик
+              качественных систем установок для предприятий, выполняет полный
+              комплекс строительно-монтажных
+              и&nbsp;пуско-наладочных работ по&nbsp;электроснабжению зданий и сооружений.
             </p>
-            <p class="main-screen__text main-screen__text--mobile">
+            <p class="main-screen__text main-screen__text--mobile-up">
               Работаем на российском рынке с <span class="main-screen__year">1992</span> года
             </p>
             <ul class="main-screen__link-list">
@@ -67,39 +70,53 @@
               </li>
             </ul>
           </div>
-          <ul class="main-screen__list">
-            <li class="main-screen__item">
-              <a href="#" class="main-screen__link">
-                <svg width="80" height="80">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
-                <p class="main-screen__link-text">
-                  Гарантированное высокое
-                  качество продукции
-                </p>
-              </a>
-            </li>
-            <li class="main-screen__item">
-              <a href="#" class="main-screen__link">
-                <svg width="80" height="80">
+        </div>
+      </div>
+      <div class="container">
+        <p class="main-screen__text main-screen__text--mobile-down">
+          Компания ЗАО «НCП «МонтCтрой» успешно работает на российском
+          рынке с <span class="main-screen__year main-screen__year--mobile-down">1992</span> года,
+          и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных
+          и пуско-наладочных работ по электроснабжению зданий и сооружений.
+        </p>
+        <ul class="main-screen__list up-slider">
+          <li class="up-slider__item">
+            <a href="#" class="up-slider__link">
+              <svg class="up-slider__svg up-slider__svg--like" width="65" height="65">
+                <use xlink:href="#icon-like"></use>
+              </svg>
+              <p class="up-slider__link-text">
+                Гарантированное высокое
+                качество продукции
+              </p>
+            </a>
+          </li>
+          <li class="up-slider__item">
+            <a href="#" class="up-slider__link">
+                <svg class="up-slider__svg up-slider__svg--hand" width="80" height="80">
                   <use xlink:href="#icon-hand"></use>
                 </svg>
-                <p class="main-screen__link-text">
-                  Исполнение всех сроков и обязательств
-                </p>
-              </a>
-            </li>
-            <li class="main-screen__item">
-              <a href="#" class="main-screen__link">
-                <svg width="80" height="80">
-                  <use xlink:href="#icon-setting"></use>
-                </svg>
-                <p class="main-screen__link-text">
-                  Собственная производственная  база
-                </p>
-              </a>
-            </li>
-          </ul>
+              <p class="up-slider__link-text">
+                Исполнение всех<br>сроков и обязательств
+              </p>
+            </a>
+          </li>
+          <li class="up-slider__item">
+            <a href="#" class="up-slider__link up-slider__link--active">
+              <svg class="up-slider__svg up-slider__svg--settings" width="65" height="65">
+                <use xlink:href="#icon-settings"></use>
+              </svg>
+              <p class="up-slider__link-text">
+                Собственная&nbsp;производственная база
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="up-slider__btn-list">
+          <li class="up-slider__btn-item"><button type="button" class="up-slider__btn btn"></button></li>
+          <li class="up-slider__btn-item"><button type="button" class="up-slider__btn btn btn--active"></button></li>
+          <li class="up-slider__btn-item"><button type="button" class="up-slider__btn btn"></button></li>
+        </ul>
       </div>
     </section>
   </main>

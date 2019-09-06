@@ -8,11 +8,33 @@
 @media (max-width: 1199px) {
   .container {
     width: 724px;
+
+    &--main-up-desktop {
+      width: auto;
+      margin: 0;
+    }
+
+    &--main-up-tablet {
+      width: 724px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .container {
     width: 280px;
+
+    &--main-up-desktop {
+      width: auto;
+      margin: 0;
+    }
+
+    &--main-up-tablet {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
