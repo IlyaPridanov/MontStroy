@@ -64,8 +64,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-
-  background-color: #fefdff;
 }
 
 *,
@@ -94,4 +92,10 @@ img {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 1199px) {
+  body {
+    background-color: #fefdff;
+  }
 }

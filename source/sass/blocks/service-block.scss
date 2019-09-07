@@ -1,17 +1,29 @@
 .service-block {
-  width: 30%;
+  padding-top: 30px;
+  padding-left: 45px;
+  width: 373px;
+  min-height: 508px;
+
+  box-shadow: 0px 5px 12px 0px #f3f3f3;
 }
 
 .service-block__caption {
   margin: 0;
+  margin-top: 11px;
+  margin-bottom: 23px;
   padding: 0;
+  width: 295px;
 
   font-family: "Roboto", "Arial", monospace;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.4;
   text-transform: uppercase;
   color: #000000;
+
+  &--three {
+    margin-bottom: 13px;
+  }
 }
 
 .service-block__list {
@@ -20,8 +32,16 @@
   padding: 0;
 }
 
+.service-block__item {
+  margin-bottom: 16px;
+}
+
 .service-block__link {
+  display: block;
+  width: 269px;
   font-family: "Roboto", "Arial", monospace;
+  font-size: 13px;
+  line-height: 1.2;
   font-weight: 400;
   text-decoration: none;
   color: #303030;
