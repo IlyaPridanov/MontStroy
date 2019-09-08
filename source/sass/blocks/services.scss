@@ -19,3 +19,39 @@
   margin: 13px;
   margin-bottom: 22px;
 }
+
+@media (max-width: 1199px) {
+  .services__caption {
+    margin: 0;
+    margin-top: 35px;
+  }
+
+  .services__list {
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  .services__item {
+    margin: 0;
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .services__item {
+    margin: 0;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+
+  .services__caption {
+    margin-top: 39px;
+  }
+}
+

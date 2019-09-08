@@ -5,6 +5,7 @@ window.onload = function () {
   var menu = document.querySelector('.nav__list--nav-page');
   var menuOpenBtn = document.querySelector('.nav__btn');
   var btnSlider = document.querySelectorAll('.btn');
+  var serviceBlock = document.querySelectorAll('.service-block');
   /*var upSliderLink = document.querySelectorAll('.up-slider__link');*/
 
   menuOpenBtn.addEventListener('click', function (e) {
@@ -21,6 +22,20 @@ window.onload = function () {
       this.classList.add('btn--active');
     });
   }
+
+  for (i = 0; i < serviceBlock.length; i++) {
+    serviceBlock[i].addEventListener('click', function (e) {
+      if (this.classList.contains('service-block--active')) {
+        this.classList.remove('service-block--active');
+      } else {
+        for (var j = 0; j < serviceBlock.length; j++) {
+          serviceBlock[j].classList.remove('service-block--active');
+        }
+        this.classList.add('service-block--active');
+      }
+    });
+  }
+
   /*var body = document.querySelector('body');
   var openPopap = document.querySelector('.header__call-link');
   var closePopap = document.querySelector('.popap__close');
