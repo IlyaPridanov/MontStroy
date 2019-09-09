@@ -22,6 +22,10 @@
   }
 }
 
+.caption__tablet {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .caption {
     font-size: 26px;
@@ -30,10 +34,18 @@
       display: none;
     }
   }
+
+  .caption__tablet {
+    display: inline;
+  }
 }
 
 @media (max-width: 767px) {
   .caption {
     font-size: 20px;
+  }
+
+  .caption__tablet {
+    display: none;
   }
 }
