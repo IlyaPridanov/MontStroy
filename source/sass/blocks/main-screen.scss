@@ -1,7 +1,14 @@
+.webp .main-screen {
+  background-image: url("../img/fon.webp");
+}
+
+.no-webp .main-screen {
+  background-image: url("../img/fon.jpg");
+}
+
 .main-screen {
   padding-top: 153px;
   padding-bottom: 82px;
-  background-image: url("../img/fon.webp");
   background-size: cover;
 }
 
@@ -101,13 +108,31 @@
 @media (max-width: 1199px) {
   .main-screen {
     padding: 0;
+  }
+
+  .webp .main-screen {
     background-image: none;
+  }
+
+  .no-webp .main-screen {
+    background-image: none;
+  }
+
+  .main-screen__up {
+    background-position: 50%;
+  }
+
+  .webp .main-screen__up {
+    background-image: url("../img/fon.webp");
+  }
+
+  .no-webp .main-screen__up {
+    background-image: url("../img/fon.jpg");
   }
 
   .main-screen__up {
     padding-top: 127px;
     padding-bottom: 130px;
-    background-image: url("../img/fon.webp");
     background-size: cover;
   }
 
@@ -154,6 +179,10 @@
 }
 
 @media (max-width: 767px) {
+  .main-screen__up {
+    background-position: 70%;
+  }
+
   .main-screen__caption {
     margin: 0;
     margin-bottom: 20px;

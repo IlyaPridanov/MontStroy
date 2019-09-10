@@ -13,6 +13,58 @@
   flex-wrap: wrap;
 }
 
+.webp .project__item {
+  &--stadium {
+    background-image: url("../img/project-1.webp");
+  }
+
+  &--business-center {
+    background-image: url("../img/project-2.webp");
+  }
+
+  &--cinema {
+    background-image: url("../img/project-4.webp");
+  }
+
+  &--tk {
+    background-image: url("../img/project-5.webp");
+  }
+
+  &--oao {
+    background-image: url("../img/project-3.webp");
+  }
+
+  &--theater {
+    background-image: url("../img/project-6.webp");
+  }
+}
+
+.no-webp .project__item {
+  &--stadium {
+    background-image: url("../img/project-1.png");
+  }
+
+  &--business-center {
+    background-image: url("../img/project-2.png");
+  }
+
+  &--cinema {
+    background-image: url("../img/project-4.png");
+  }
+
+  &--tk {
+    background-image: url("../img/project-5.png");
+  }
+
+  &--oao {
+    background-image: url("../img/project-3.png");
+  }
+
+  &--theater {
+    background-image: url("../img/project-6.png");
+  }
+}
+
 .project__item {
   position: relative;
   z-index: 1;
@@ -26,34 +78,28 @@
 
   &--stadium {
     background-position-y: 50%;
-    background-image: url("../img/project-1.webp");
   }
 
   &--business-center {
     background-position-x: 50%;
-    background-image: url("../img/project-2.webp");
   }
 
   &--cinema {
     background-position-x: 50%;
-    background-image: url("../img/project-4.webp");
   }
 
   &--tk {
     background-size: 200%;
     background-position: 50%;
-    background-image: url("../img/project-5.webp");
   }
 
   &--oao {
     background-size: 250%;
     background-position: 20% 65%;
-    background-image: url("../img/project-3.webp");
   }
 
   &--theater {
     background-position: 50%;
-    background-image: url("../img/project-6.webp");
   }
 
   &::after {
@@ -160,6 +206,18 @@
     display: block;
   }
 
+  .webp .project__list .project__item {
+    &--stadium {
+      background-image: url("../img/project-1-tablet.webp");
+    }
+  }
+
+  .no-webp .project__list .project__item {
+    &--stadium {
+      background-image: url("../img/project-1-tablet.png");
+    }
+  }
+
   .project__list .project__item {
     width: 100%;
     margin-right: 0;
@@ -169,8 +227,6 @@
 
     &--stadium {
       padding-right: 90px;
-
-      background-image: url("../img/project-1-tablet.webp");
     }
 
     &--business-center {

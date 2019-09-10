@@ -15,8 +15,16 @@
   background-size: cover;
 }
 
+.webp .contact__map-block {
+  background-image: url("../img/map.webp");
+}
+
+.no-webp .contact__map-block {
+  background-image: url("../img/map.png");
+}
+
 .contact__map {
-  display: none;
+  display: block;
   width: 100%;
   height: 100%;
 }
