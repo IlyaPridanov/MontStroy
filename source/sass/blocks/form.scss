@@ -121,3 +121,71 @@
     opacity: 0.6;
   }
 }
+
+@media (max-width: 1199px) {
+  .form {
+    padding: 31px 50px 0 51px;
+    top: -118px;
+    left: 272px;
+    width: 413px;
+    min-height: 413px;
+  }
+
+  .form__caption {
+    margin-left: 54px;
+
+    font-family: "Raleway", "Arial", monospace;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+  }
+
+  .form__label {
+    font-size: 14px;
+  }
+
+  .form__row {
+    margin: 31px 0;
+  }
+
+  .form__column {
+    width: 119px;
+
+    &--tel {
+      width: 150px;
+    }
+  }
+
+  .form__input {
+    font-size: 14px;
+
+    &--mail {
+      margin-bottom: 31px;
+    }
+  }
+
+  .form__text {
+    margin-top: 11px;
+    margin-left: 30px;
+
+    font-size: 10px;
+  }
+
+  .form__link {
+    width: 158px;
+    margin-top: 0px;
+    margin-left: 49px;
+    border-bottom: 1px dashed #000000;
+  }
+
+  .form__submit {
+    margin-left: 73px;
+    margin-top: 25px;
+    padding: 0;
+    width: 164px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 2;
+    box-shadow: none;
+  }
+}

@@ -29,6 +29,7 @@
 }
 
 .footer__contact-list {
+  order: 1;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -138,4 +139,24 @@
   color: #FFFFFF;
 
   opacity: 0.6;
+}
+
+@media (max-width: 1199px) {
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__up {
+    display: block;
+  }
+
+  .footer__contact-list {
+    margin-left: 200px;
+    margin-right: 0;
+  }
+
+  .footer__column {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

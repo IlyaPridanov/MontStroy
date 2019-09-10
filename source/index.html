@@ -540,55 +540,33 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__up">
-          <div class="footer__column">
-              <a href="index.html" class="footer__logo logo">
-                <picture>
-                  <source srcset="img/logo.webp" type="image/webp">
-                  <source srcset="img/logo.png" type="image/png">
-                  <img class="logo__img" src="img/logo.png" alt="logo" width="141" height="60">
-                </picture>
-              </a>
-              <div class="footer__nav footer-nav">
-                <h3 class="footer-nav__caption">ЗАО «НCП «МонтCтрой»</h3>
-                <ul class="footer-nav__list">
-                  <li class="footer-nav__item">
-                    <a href="#" class="footer-nav__link">Услуги</a>
-                  </li>
-                  <li class="footer-nav__item">
-                    <a href="#" class="footer-nav__link">Проекты</a>
-                  </li>
-                  <li class="footer-nav__item">
-                    <a href="#" class="footer-nav__link">Партнеры</a>
-                  </li>
-                  <li class="footer-nav__item">
-                    <a href="#" class="footer-nav__link">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-              <ul class="footer__social-list">
-                  <li class="footer__social-item">
-                    <a href="#" class="footer__social-link">
-                      <svg class="footer__social-svg footer__social-svg--vk">
-                        <use xlink:href="#icon-vk"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer__social-item">
-                    <a href="#" class="footer__social-link">
-                      <svg class="footer__social-svg footer__social-svg--twitter">
-                        <use xlink:href="#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer__social-item">
-                    <a href="#" class="footer__social-link">
-                      <svg class="footer__social-svg footer__social-svg--fb">
-                        <use xlink:href="#icon-fb"></use>
-                      </svg>
-                    </a>
-                  </li>
-              </ul>
-            </div>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <a href="#" class="footer__contact-link">
+              <p class="footer__contact-text footer__contact-text--address">Варшавское шоссе,  д, 118, к.1 Бизнес-центр  «ВАРШАВКА Sky»</p>
+              <svg class="footer__contact-svg footer__contact-svg--address">
+                <use xlink:href="#icon-geo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contact-item footer__contact-item--mail">
+            <a href="mailto:zao@montstroy.ru" class="footer__contact-link">
+              <p class="footer__contact-text">zao@montstroy.ru</p>
+              <svg class="footer__contact-svg footer__contact-svg--mail">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__contact-item footer__contact-item--tel">
+            <a href="tel:+74954526723" class="footer__contact-link">
+              <p class="footer__contact-text">+7 (495) 452-67-23</p>
+              <p class="footer__contact-text footer__contact-text--time">Ежедневно с 9:00 до 18:00</p>
+              <svg class="footer__contact-svg footer__contact-svg--tel">
+                <use xlink:href="#icon-tel"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <form class="footer__form form" action="#" method="GET">
           <h2 class="form__caption">свяжитесь с нами</h2>
           <div class="form__row">
@@ -596,7 +574,7 @@
               <label class="form__label" for="name">Имя</label>
               <input type="text" id="name" class="form__input" name="name" required>
             </div>
-            <div class="form__column">
+            <div class="form__column form__column--tel">
               <label class="form__label" for="tel">Телефон</label>
               <input type="tel" id="tel" class="form__input" name="tel" required>
             </div>
@@ -611,33 +589,55 @@
           </p>
           <button class="form__submit" type="submit">Отправить</button>
         </form>
-        <ul class="footer__contact-list">
-            <li class="footer__contact-item">
-              <a href="#" class="footer__contact-link">
-                <p class="footer__contact-text footer__contact-text--address">Варшавское шоссе,  д, 118, к.1 Бизнес-центр  «ВАРШАВКА Sky»</p>
-                <svg class="footer__contact-svg footer__contact-svg--address">
-                  <use xlink:href="#icon-geo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contact-item footer__contact-item--mail">
-              <a href="mailto:zao@montstroy.ru" class="footer__contact-link">
-                <p class="footer__contact-text">zao@montstroy.ru</p>
-                <svg class="footer__contact-svg footer__contact-svg--mail">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__contact-item footer__contact-item--tel">
-              <a href="tel:+74954526723" class="footer__contact-link">
-                <p class="footer__contact-text">+7 (495) 452-67-23</p>
-                <p class="footer__contact-text footer__contact-text--time">Ежедневно с 9:00 до 18:00</p>
-                <svg class="footer__contact-svg footer__contact-svg--tel">
-                  <use xlink:href="#icon-tel"></use>
-                </svg>
-              </a>
-            </li>
-        </ul>
+        <div class="footer__column">
+          <a href="index.html" class="footer__logo logo">
+            <picture>
+              <source srcset="img/logo.webp" type="image/webp">
+              <source srcset="img/logo.png" type="image/png">
+              <img class="logo__img" src="img/logo.png" alt="logo" width="141" height="60">
+            </picture>
+          </a>
+          <div class="footer__nav footer-nav">
+            <h3 class="footer-nav__caption">ЗАО «НCП «МонтCтрой»</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Услуги</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Проекты</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Партнеры</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg class="footer__social-svg footer__social-svg--vk">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg class="footer__social-svg footer__social-svg--twitter">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg class="footer__social-svg footer__social-svg--fb">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__dowm">
         <p class="footer__dowm-text">
