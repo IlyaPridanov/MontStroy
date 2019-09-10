@@ -6,6 +6,7 @@ window.onload = function () {
   var menuOpenBtn = document.querySelector('.nav__btn');
   var btnSlider = document.querySelectorAll('.btn');
   var serviceBlock = document.querySelectorAll('.service-block');
+  var tel = document.querySelector('#tel');
   /*var upSliderLink = document.querySelectorAll('.up-slider__link');*/
 
   menuOpenBtn.addEventListener('click', function (e) {
@@ -35,6 +36,14 @@ window.onload = function () {
       }
     });
   }
+
+  /*Добавляет маску*/
+
+
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  var mask1 = IMask(tel, maskOptions);
 
   /*var body = document.querySelector('body');
   var openPopap = document.querySelector('.header__call-link');
@@ -113,13 +122,4 @@ window.onload = function () {
       }
     });
   }*/
-
-  /*Добавляет маску*/
-
-
-  var maskOptions = {
-    mask: '+{7}(000)000-00-00'
-  };
-  var mask1 = IMask(tel, maskOptions);
-  var mask2 = IMask(formTel, maskOptions);
 };

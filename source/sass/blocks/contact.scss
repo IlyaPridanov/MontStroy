@@ -1,0 +1,22 @@
+.contact {
+  margin-top: 129px;
+}
+
+.contact__caption {
+  margin: 0;
+  display: none;
+}
+
+.contact__map-block {
+  height: 809px;
+  width: 100%;
+
+  background-image: url("../img/map.webp");
+  background-size: cover;
+}
+
+.contact__map {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
