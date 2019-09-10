@@ -74,3 +74,25 @@
     opacity: 0.6;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-nav__caption {
+    display: none;
+  }
+
+  .footer-nav__list {
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+
+  .footer-nav__item {
+    margin: 0;
+    border-bottom: 1px solid #626262;
+  }
+
+  .footer-nav__link {
+    padding: 19px 0 16px 0;
+    font-size: 14px;
+  }
+}

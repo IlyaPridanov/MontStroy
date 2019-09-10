@@ -38,7 +38,7 @@
           </ul>
           <ul class="nav__list connection">
             <li class="connection__item"><a href="#" class="connection__link connection__link--tel">+7 (495) 452-67-23</a></li>
-            <li class="connection__item connection__item--btn"><a href="#" class="connection__link connection__link--btn">Обратная связь</a></li>
+            <li class="connection__item connection__item--btn"><a href="#footer" class="connection__link connection__link--btn">Обратная связь</a></li>
           </ul>
         </nav>
       </div>
@@ -66,7 +66,7 @@
                 <a href="#services" class="main-screen__link-nav main-screen__link-nav--services">Наши услуги</a>
               </li>
               <li class="main-screen__link-item">
-                <a href="#" class="main-screen__link-nav">Связаться с нами</a>
+                <a href="#footer" class="main-screen__link-nav">Связаться с нами</a>
               </li>
             </ul>
           </div>
@@ -531,16 +531,18 @@
       </div>
     </section>
     <section class="contact">
-      <h2 class="contact__caption caption">контакты</h2>
+      <div class="container--contact-mobile">
+        <h2 class="contact__caption caption">контакты</h2>
+      </div>
       <div class="contact__map-block">
         <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4504.721503719023!2d37.61484151670975!3d55.6305380323274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sby!4v1568040456532!5m2!1sru!2sby" frameborder="0" style="border:0;"></iframe>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container container--footer-tablet">
       <div class="footer__up">
-        <div class="footer__tablet-row">
+        <div class="footer__tablet-row container--footer-mobile">
           <ul class="footer__contact-list">
               <li class="footer__contact-item">
                 <a href="#" class="footer__contact-link">
@@ -570,26 +572,28 @@
           </ul>
         </div>
         <form class="footer__form form" action="#" method="GET">
-          <h2 class="form__caption">свяжитесь с нами</h2>
-          <div class="form__row">
-            <div class="form__column">
-              <label class="form__label" for="name">Имя</label>
-              <input type="text" id="name" class="form__input" name="name" required>
+          <div class="container--footer-mobile">
+            <h2 class="form__caption">свяжитесь с нами</h2>
+            <div class="form__row">
+              <div class="form__column">
+                <label class="form__label" for="name">Имя</label>
+                <input type="text" id="name" class="form__input" name="name" required>
+              </div>
+              <div class="form__column form__column--tel">
+                <label class="form__label" for="tel">Телефон</label>
+                <input type="tel" id="tel" class="form__input" name="tel" required>
+              </div>
             </div>
-            <div class="form__column form__column--tel">
-              <label class="form__label" for="tel">Телефон</label>
-              <input type="tel" id="tel" class="form__input" name="tel" required>
-            </div>
+            <label class="form__label" for="mail">E-mail</label>
+            <input type="email" id="mail" class="form__input form__input--mail" name="mail" required>
+            <label class="form__label" for="speach">Сообщение</label>
+            <input type="text" id="speach" class="form__input form__input--speach" name="speach" required>
+            <p class="form__text">
+              Заполняя форму на сайте, вы соглашаетесь с нашей
+              <a class="form__link" href="#">Политикой конфиденциальности</a>
+            </p>
+            <button class="form__submit" type="submit">Отправить</button>
           </div>
-          <label class="form__label" for="mail">E-mail</label>
-          <input type="email" id="mail" class="form__input form__input--mail" name="mail" required>
-          <label class="form__label" for="speach">Сообщение</label>
-          <input type="text" id="speach" class="form__input form__input--speach" name="speach" required>
-          <p class="form__text">
-            Заполняя форму на сайте, вы соглашаетесь с нашей
-            <a class="form__link" href="#">Политикой конфиденциальности</a>
-          </p>
-          <button class="form__submit" type="submit">Отправить</button>
         </form>
         <div class="footer__column">
           <a href="index.html" class="footer__logo logo">
@@ -603,48 +607,87 @@
             <h3 class="footer-nav__caption">ЗАО «НCП «МонтCтрой»</h3>
             <ul class="footer-nav__list">
               <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Услуги</a>
+                <div class="container--footer-mobile">
+                  <a href="#" class="footer-nav__link">Услуги</a>
+                </div>
               </li>
               <li class="footer-nav__item footer-nav__item--project">
-                <a href="#" class="footer-nav__link">Проекты</a>
+                <div class="container--footer-mobile">
+                  <a href="#" class="footer-nav__link">Проекты</a>
+                </div>
               </li>
               <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Партнеры</a>
+                <div class="container--footer-mobile">
+                  <a href="#" class="footer-nav__link">Партнеры</a>
+                </div>
               </li>
               <li class="footer-nav__item">
-                <a href="#" class="footer-nav__link">Контакты</a>
+                <div class="container--footer-mobile">
+                  <a href="#" class="footer-nav__link">Контакты</a>
+                </div>
               </li>
             </ul>
           </div>
-          <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
-                  <svg class="footer__social-svg footer__social-svg--vk">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item footer__social-item--twitter">
-                <a href="#" class="footer__social-link">
-                  <svg class="footer__social-svg footer__social-svg--twitter">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item footer__social-item--fb">
-                <a href="#" class="footer__social-link">
-                  <svg class="footer__social-svg footer__social-svg--fb">
-                    <use xlink:href="#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-          </ul>
+          <div class="container--footer-mobile">
+            <ul class="footer__contact-list footer__contact-list--mobile">
+                <li class="footer__contact-item">
+                  <a href="#" class="footer__contact-link">
+                    <p class="footer__contact-text footer__contact-text--mobile">Варшавское шоссе,  д, 118, к.1 Бизнес-центр  «ВАРШАВКА Sky»</p>
+                    <svg class="footer__contact-svg footer__contact-svg--address">
+                      <use xlink:href="#icon-geo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__contact-item footer__contact-item--mail footer__contact-item--mail-mobile">
+                  <a href="mailto:zao@montstroy.ru" class="footer__contact-link">
+                    <p class="footer__contact-text footer__contact-text--mail">zao@montstroy.ru</p>
+                    <svg class="footer__contact-svg footer__contact-svg--mail">
+                      <use xlink:href="#icon-mail"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__contact-item footer__contact-item--tel footer__contact-item--tel-mobile">
+                  <a href="tel:+74954526723" class="footer__contact-link">
+                    <p class="footer__contact-text footer__contact-text--tel">+7 (495) 452-67-23</p>
+                    <p class="footer__contact-text footer__contact-text--time">Ежедневно с 9:00 до 18:00</p>
+                    <svg class="footer__contact-svg footer__contact-svg--tel">
+                      <use xlink:href="#icon-tel"></use>
+                    </svg>
+                  </a>
+                </li>
+            </ul>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__social-svg footer__social-svg--vk">
+                      <use xlink:href="#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item footer__social-item--twitter">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__social-svg footer__social-svg--twitter">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item footer__social-item--fb">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__social-svg footer__social-svg--fb">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer__dowm">
-        <p class="footer__dowm-text">
-          1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены
-        </p>
+        <div class="container--footer-mobile">
+          <p class="footer__dowm-text">
+            1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены
+          </p>
+        </div>
       </div>
     </div>
   </footer>

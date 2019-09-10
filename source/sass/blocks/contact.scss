@@ -30,3 +30,22 @@
     height: 350px;
   }
 }
+
+@media (max-width: 767px) {
+  .contact {
+    margin-top: 41px;
+  }
+
+  .contact__caption {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .contact__map-block {
+    height: 198px;
+
+    background-position-x: 50%;
+    background-size: 190%;
+    background-repeat: no-repeat;
+  }
+}

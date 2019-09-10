@@ -189,3 +189,47 @@
     box-shadow: none;
   }
 }
+
+@media (max-width: 767px) {
+  .form {
+    position: static;
+    padding: 0;
+    padding-top: 40px;
+    width: 100%;
+    min-height: 457px;
+    transform: none;
+  }
+
+  .form__caption {
+    margin: 0;
+    text-align: center;
+  }
+
+  .form__row {
+    margin: 23px 0 26px 0;
+  }
+
+  .form__label {
+    margin-bottom: 6px;
+  }
+
+  .form__column--tel {
+    width: 119px;
+  }
+
+  .form__text {
+    margin: 0;
+    margin-top: 19px;
+    text-align: center;
+  }
+
+  .form__link {
+    margin: 0 auto;
+    width: 160px;
+  }
+
+  .form__submit {
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+}
