@@ -6,6 +6,7 @@ window.onload = function () {
   var menuOpenBtn = document.querySelector('.nav__btn');
   var btnSlider = document.querySelectorAll('.btn');
   var serviceBlock = document.querySelectorAll('.service-block');
+  var upSliderLink = document.querySelectorAll('.up-slider__link');
   var tel = document.querySelector('#tel');
   var name = document.querySelector('#name');
   var mail = document.querySelector('#mail');
@@ -22,6 +23,13 @@ window.onload = function () {
       for (var j = 0; j < btnSlider.length; j++) {
         btnSlider[j].classList.remove('btn--active');
       }
+      for (var k = 0; k < upSliderLink.length; k++) {
+        upSliderLink[k].classList.remove('up-slider__link--active');
+        if (this.getAttribute("aria-label") === upSliderLink[k].getAttribute("aria-label")) {
+          upSliderLink[k].classList.add('up-slider__link--active');
+        }
+      }
+      console.log(this.getAttribute("aria-label"));
       this.classList.add('btn--active');
     });
   }
