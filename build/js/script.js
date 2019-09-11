@@ -7,6 +7,8 @@ window.onload = function () {
   var btnSlider = document.querySelectorAll('.btn');
   var serviceBlock = document.querySelectorAll('.service-block');
   var upSliderLink = document.querySelectorAll('.up-slider__link');
+  var partnersItem = document.querySelectorAll('.partners__item');
+  var partnersImg = document.querySelectorAll('.partners__img');
   var tel = document.querySelector('#tel');
   var name = document.querySelector('#name');
   var mail = document.querySelector('#mail');
@@ -29,7 +31,22 @@ window.onload = function () {
           upSliderLink[k].classList.add('up-slider__link--active');
         }
       }
-      console.log(this.getAttribute("aria-label"));
+      for (k = 0; k < partnersImg.length; k++) {
+        partnersImg[k].classList.remove('partners__img--active');
+        partnersItem[k].classList.remove('partners__item--active');
+        if (this.getAttribute("aria-label") === "ava") {
+          partnersItem[0].classList.remove('partners__item--tablet-no-active');
+          partnersItem[partnersItem.length - 1].classList.add('partners__item--tablet-no-active');
+        }
+        if (this.getAttribute("aria-label") === "teplodomenerg") {
+          partnersItem[partnersItem.length - 1].classList.remove('partners__item--tablet-no-active');
+          partnersItem[0].classList.add('partners__item--tablet-no-active');
+        }
+        if (this.getAttribute("aria-label") === partnersImg[k].getAttribute("aria-label")) {
+          partnersImg[k].classList.add('partners__img--active');
+          partnersItem[k].classList.add('partners__item--active');
+        }
+      }
       this.classList.add('btn--active');
     });
   }
