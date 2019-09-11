@@ -1,6 +1,10 @@
+.project {
+  padding-top: 105px;
+}
+
 .project__caption {
   margin: 0;
-  margin-top: 105px;
+  /*margin-top: 105px;*/
   margin-bottom: 34px;
   padding: 0;
 }
@@ -279,8 +283,12 @@
 }
 
 @media (max-width: 767px) {
+  .project {
+    padding-top: 42px;
+  }
+
   .project__caption {
-    margin-top: 42px;
+    /*margin-top: 42px;*/
     margin-bottom: 10px;
   }
 

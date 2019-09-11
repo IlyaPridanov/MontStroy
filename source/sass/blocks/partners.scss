@@ -1,5 +1,9 @@
+.partners {
+  padding-top: 108px;
+}
+
 .partners__caption-row {
-  margin-top: 108px;
+  /*margin-top: 108px;*/
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
@@ -104,9 +108,13 @@
 }
 
 @media (max-width: 1199px) {
-  .partners__caption-row {
-    margin-top: 79px;
+  .partners {
+    padding-top: 70px;
   }
+
+  /*.partners__caption-row {
+    margin-top: 79px;
+  }*/
 
   .partners__btn-row {
     display: none;
@@ -167,8 +175,11 @@
 }
 
 @media (max-width: 767px) {
+  .partners {
+    padding-top: 30px;
+  }
+
   .partners__caption-row {
-    margin-top: 40px;
     margin-bottom: 12px;
   }
 
